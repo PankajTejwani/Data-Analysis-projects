@@ -22,4 +22,4 @@ engine = sal.creat_engine('mssql://Pankaj\SQLEXPRESS/master?driver=ODBC+Driver+1
 
 conn=engine.connect()
 
-df.to_mysql('df_order', con=conn, index = False, if_exists='replace')
+df.to_mysql('df_order', con=conn, index = False, if_exists='Append')
